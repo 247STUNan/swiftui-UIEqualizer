@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		82525CFC6B390BE9254CCCB7 /* Pods_UIEqualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855AA4DE7A101938B62B165B /* Pods_UIEqualizer.framework */; };
+		89371E102E367E380006907A /* Color.crop+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89371E0F2E367E330006907A /* Color.crop+.swift */; };
 		D8467AE02DEFFA110057FE8F /* EQLineChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8467AD22DEFFA110057FE8F /* EQLineChartData.swift */; };
 		D8467AE12DEFFA110057FE8F /* RealmEQLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8467AD32DEFFA110057FE8F /* RealmEQLineChart.swift */; };
 		D8467AE22DEFFA110057FE8F /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8467AD52DEFFA110057FE8F /* BlurView.swift */; };
@@ -39,7 +40,7 @@
 /* Begin PBXFileReference section */
 		855AA4DE7A101938B62B165B /* Pods_UIEqualizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIEqualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		892381CB2DEF114E000461E2 /* UIEqualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIEqualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6992D41AE6C57A688B68AF4 /* Pods-UIEqualizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIEqualizer.release.xcconfig"; path = "Target Support Files/Pods-UIEqualizer/Pods-UIEqualizer.release.xcconfig"; sourceTree = "<group>"; };
+		89371E0F2E367E330006907A /* Color.crop+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color.crop+.swift"; sourceTree = "<group>"; };
 		D8467AD02DEFFA110057FE8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D8467AD22DEFFA110057FE8F /* EQLineChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EQLineChartData.swift; sourceTree = "<group>"; };
 		D8467AD32DEFFA110057FE8F /* RealmEQLineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmEQLineChart.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		D8467B662DF029840057FE8F /* PlayerButtonConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerButtonConfig.swift; sourceTree = "<group>"; };
 		D8467B682DF02BD40057FE8F /* PlayerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerButton.swift; sourceTree = "<group>"; };
 		D8467B6A2DF032D90057FE8F /* ToggleEQualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleEQualizerView.swift; sourceTree = "<group>"; };
-		F72C028C3E5D2874CD1526CB /* Pods-UIEqualizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIEqualizer.debug.xcconfig"; path = "Target Support Files/Pods-UIEqualizer/Pods-UIEqualizer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,6 @@
 			children = (
 				D8467ADF2DEFFA110057FE8F /* UIEqualizer */,
 				892381CC2DEF114E000461E2 /* Products */,
-				BA99464ABB0CEA65552479CF /* Pods */,
 				ECE88ED26BB4433F984403C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -87,13 +86,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BA99464ABB0CEA65552479CF /* Pods */ = {
+		89371E0E2E367E2A0006907A /* Utils+ */ = {
 			isa = PBXGroup;
 			children = (
-				F72C028C3E5D2874CD1526CB /* Pods-UIEqualizer.debug.xcconfig */,
-				A6992D41AE6C57A688B68AF4 /* Pods-UIEqualizer.release.xcconfig */,
+				89371E0F2E367E330006907A /* Color.crop+.swift */,
 			);
-			path = Pods;
+			path = "Utils+";
 			sourceTree = "<group>";
 		};
 		D8467AD12DEFFA110057FE8F /* Preview Content */ = {
@@ -126,6 +124,7 @@
 		D8467ADA2DEFFA110057FE8F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				89371E0E2E367E2A0006907A /* Utils+ */,
 				D8467AD42DEFFA110057FE8F /* Models */,
 				D8467AD72DEFFA110057FE8F /* Subs */,
 				D8467AD82DEFFA110057FE8F /* ContainerEQView.swift */,
@@ -288,6 +287,7 @@
 				D8467AE42DEFFA110057FE8F /* ContainerEQView.swift in Sources */,
 				D8467AE52DEFFA110057FE8F /* EQualizerView.swift in Sources */,
 				D8467B6B2DF032E20057FE8F /* ToggleEQualizerView.swift in Sources */,
+				89371E102E367E380006907A /* Color.crop+.swift in Sources */,
 				D8467AE62DEFFA110057FE8F /* ContentView.swift in Sources */,
 				D8467AE72DEFFA110057FE8F /* UIEqualizerApp.swift in Sources */,
 				D8467B672DF029890057FE8F /* PlayerButtonConfig.swift in Sources */,
@@ -413,7 +413,6 @@
 		};
 		892381DB2DEF1150000461E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F72C028C3E5D2874CD1526CB /* Pods-UIEqualizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,7 +455,6 @@
 		};
 		892381DC2DEF1150000461E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6992D41AE6C57A688B68AF4 /* Pods-UIEqualizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
